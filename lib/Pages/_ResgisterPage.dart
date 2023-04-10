@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 //Components
 import '../Components/_Logo.dart';
 import '../Components/_ButtonCreateAccount.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //NavigatorScreens
-import '../Pages/ResgisterPage.dart';
+import '../Pages/_ResgisterPage.dart';
 
 class ButtonRegister extends StatelessWidget {
   const ButtonRegister({super.key});

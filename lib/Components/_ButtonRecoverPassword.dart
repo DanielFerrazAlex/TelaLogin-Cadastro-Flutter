@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //NavigatorScreens
-import '../Pages/_RecoverAccount.dart';
+import '../Pages/_RecoverAccountPage.dart';
 
 class RecoverPassword extends StatelessWidget {
   const RecoverPassword({super.key});
