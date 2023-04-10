@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ButtonLogin extends StatelessWidget {
-  const ButtonLogin({super.key});
+class ButtonSendMail extends StatelessWidget {
+  const ButtonSendMail({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,15 +15,15 @@ class ButtonLogin extends StatelessWidget {
               foregroundColor: Colors.white,
               backgroundColor: Colors.blue,
             ),
-              onPressed: () {
-                print('Teste');
-              },
-              child: const Text(
-                'Logar',
-                style: TextStyle(
-                  fontSize: 18,
-                ),
+            onPressed: () {
+              print('Teste');
+            },
+            child: const Text(
+              'Recuperar Conta',
+              style: TextStyle(
+                fontSize: 18,
               ),
+            ),
           ),
         )
       ],

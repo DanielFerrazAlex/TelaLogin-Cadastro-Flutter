@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-//components
-import 'package:login_page/Components/_ButtonLogin.dart';
-import 'package:login_page/Components/_ButtonRegister.dart';
-import 'package:login_page/Components/_Logo.dart';
-import 'package:login_page/Components/_RecoverPassword.dart';
-import 'package:login_page/Components/_TextInputLogin.dart';
+//Components
+import '../Components/_ButtonLogin.dart';
+import '../Components/_ButtonRegister.dart';
+import '../Components/_Logo.dart';
+import '../Components/_ButtonRecoverPassword.dart';
+import '../Components/_TextInputLogin.dart';
 import '../Components/_TextInputPassword.dart';
 
 class LoginPage extends StatefulWidget {
@@ -21,15 +21,22 @@ class LoginPageState extends State<LoginPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const <Widget> [
+        children: const [
           LogoImage(),
-          Divider(),
           TextInputLogin(),
           Divider(),
           TextInputPassword(),
           RecoverPassword(),
           ButtonLogin(),
-          ButtonRegister()
+        ],
+      ),
+      bottomNavigationBar: Stack(
+        alignment: Alignment.bottomCenter,
+        children: const [
+          SizedBox(
+            height: 45.0,
+            child: ButtonRegister(),
+          ),
         ],
       ),
     );

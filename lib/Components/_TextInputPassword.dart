@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class TextInputPassword extends StatelessWidget {
   const TextInputPassword({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,9 +12,11 @@ class TextInputPassword extends StatelessWidget {
             style: const TextStyle(
               fontSize: 18,
             ),
-            decoration: const InputDecoration(
-              label: Text('Senha: '),
-              border: OutlineInputBorder(),
+            decoration: InputDecoration(
+              label: const Text('Senha: '),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(100),
+              ),
             ),
           ),
         ),

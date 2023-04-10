@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextInputLogin extends StatelessWidget {
-  const TextInputLogin({super.key});
+class TextInputEmail extends StatelessWidget {
+  const TextInputEmail({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -12,7 +12,7 @@ class TextInputLogin extends StatelessWidget {
               fontSize: 18,
             ),
             decoration: InputDecoration(
-              label: const Text('Login: '),
+              label: const Text('E-mail: '),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(100),
               ),

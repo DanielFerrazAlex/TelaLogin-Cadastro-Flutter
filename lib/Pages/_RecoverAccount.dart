@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 
-
 //Components
+import '../Components/_ButtonSendMail.dart';
 import '../Components/_Logo.dart';
-import '../Components/_ButtonCreateAccount.dart';
 import '../Components/_TextInputEmail.dart';
-import '../Components/_TextInputLogin.dart';
-import '../Components/_TextInputPassword.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+class RecoverAccount extends StatefulWidget {
+  const RecoverAccount({Key? key}) : super(key: key);
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<RecoverAccount> createState() => _RecoverAccountState();
 }
-class _RegisterPageState extends State<RegisterPage> {
+class _RecoverAccountState extends State<RecoverAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,13 +20,10 @@ class _RegisterPageState extends State<RegisterPage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
           LogoImage(),
-          TextInputLogin(),
-          Divider(),
-          TextInputPassword(),
           Divider(),
           TextInputEmail(),
           Divider(),
-          CreateAccount(),
+          ButtonSendMail()
         ],
       ),
     );
